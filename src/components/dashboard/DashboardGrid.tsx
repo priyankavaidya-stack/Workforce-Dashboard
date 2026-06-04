@@ -221,6 +221,7 @@ const DashboardGrid = () => {
       >
         <AgGridReact
           ref={gridRef}
+          theme="legacy"
           modules={[AllCommunityModule]}
           rowData={rowData}
           columnDefs={columnDefs}
