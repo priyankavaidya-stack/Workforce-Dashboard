@@ -64,8 +64,8 @@ const RevenueChart = () => {
   }
 
   return (
-    <Card sx={{ height: "100%" }}>
-      <CardContent sx={{ p: 2.5 }}>
+    <Card sx={{ height: "100%", display: "flex", flexDirection: "column" }}>
+      <CardContent sx={{ p: 2.5, flex: 1, display: "flex", flexDirection: "column" }}>
         <Typography
           variant="h6"
           gutterBottom
@@ -73,30 +73,39 @@ const RevenueChart = () => {
           Payroll by Department
         </Typography>
 
-        <ResponsiveContainer
-          width="100%"
-          height={300}
-        >
-          <BarChart data={chartData}>
-            <CartesianGrid strokeDasharray="3 3" stroke={theme.palette.divider} />
+        <Box sx={{ flex: 1, width: "100%", minHeight: 300, minWidth: 0 }}>
+          <ResponsiveContainer
+            width="100%"
+            height="100%"
+            aspect={16 / 4}
+          >
+            <BarChart data={chartData}>
+              <CartesianGrid strokeDasharray="3 3" stroke={theme.palette.divider} />
 
-            <XAxis
-              dataKey="department"
-              tick={{ fill: theme.palette.text.secondary, fontSize: 12 }}
-            />
+              <XAxis
+                dataKey="department"
+                tick={{ fill: theme.palette.text.secondary, fontSize: 12 }}
+              />
 
-            <YAxis tick={{ fill: theme.palette.text.secondary, fontSize: 12 }} />
+              <YAxis tick={{ fill: theme.palette.text.secondary, fontSize: 12 }} />
 
-            <Tooltip />
+              <Tooltip
+                contentStyle={{
+                  backgroundColor: theme.palette.background.paper,
+                  border: `1px solid ${theme.palette.divider}`,
+                  borderRadius: 4,
+                }}
+              />
 
-            <Bar
-              dataKey="payroll"
-              fill={theme.palette.primary.main}
-              radius={[6, 6, 0, 0]}
-              name="Payroll"
-            />
-          </BarChart>
-        </ResponsiveContainer>
+              <Bar
+                dataKey="payroll"
+                fill={theme.palette.primary.main}
+                radius={[6, 6, 0, 0]}
+                name="Payroll"
+              />
+            </BarChart>
+          </ResponsiveContainer>
+        </Box>
       </CardContent>
     </Card>
   );

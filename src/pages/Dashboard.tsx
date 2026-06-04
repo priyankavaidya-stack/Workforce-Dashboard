@@ -149,6 +149,7 @@ const Dashboard = () => {
               xs: 12,
               md: 6,
             }}
+            sx={{ minHeight: 380 }}
           >
             <Suspense fallback={<SectionFallback />}>
               <RevenueChart />
@@ -160,6 +161,7 @@ const Dashboard = () => {
               xs: 12,
               md: 6,
             }}
+            sx={{ minHeight: 380 }}
           >
             <Suspense fallback={<SectionFallback />}>
               <StatusChart />

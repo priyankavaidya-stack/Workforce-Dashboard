@@ -140,8 +140,8 @@ const KPISection = () => {
                   {card.growth}
                 </Typography>
 
-                <Box sx={{ mt: 1.5, height: 36, width: 132 }}>
-                  <ResponsiveContainer width="100%" height="100%">
+                <Box sx={{ mt: 1.5, height: 36, width: 132, minWidth: 0 }}>
+                  <ResponsiveContainer width="100%" height="100%" aspect={16 / 2}>
                     <AreaChart
                       data={card.trend.map(
                         (value, index) => ({
@@ -157,6 +157,7 @@ const KPISection = () => {
                         fill={card.color}
                         fillOpacity={0.2}
                         strokeWidth={2}
+                        isAnimationActive={false}
                       />
                     </AreaChart>
                   </ResponsiveContainer>

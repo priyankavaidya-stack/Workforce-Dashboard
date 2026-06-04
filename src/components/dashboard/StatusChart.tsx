@@ -71,8 +71,8 @@ const StatusChart = () => {
   }
 
   return (
-    <Card sx={{ height: "100%" }}>
-      <CardContent sx={{ p: 2.5 }}>
+    <Card sx={{ height: "100%", display: "flex", flexDirection: "column" }}>
+      <CardContent sx={{ p: 2.5, flex: 1, display: "flex", flexDirection: "column" }}>
         <Typography
           variant="h6"
           gutterBottom
@@ -80,36 +80,45 @@ const StatusChart = () => {
           Employee Activity
         </Typography>
 
-        <ResponsiveContainer
-          width="100%"
-          height={300}
-        >
-          <PieChart>
-            <Pie
-              data={data}
-              dataKey="value"
-              nameKey="name"
-              outerRadius={100}
-              label
-            >
-              {data.map((_, index) => (
-                <Cell
-                  key={index}
-                  fill={
-                    COLORS[
-                      index % COLORS.length
-                    ]
-                  }
-                />
-              ))}
-            </Pie>
+        <Box sx={{ flex: 1, width: "100%", minHeight: 300, minWidth: 0 }}>
+          <ResponsiveContainer
+            width="100%"
+            height="100%"
+            aspect={16 / 6}
+          >
+            <PieChart>
+              <Pie
+                data={data}
+                dataKey="value"
+                nameKey="name"
+                outerRadius={100}
+                label
+              >
+                {data.map((_, index) => (
+                  <Cell
+                    key={index}
+                    fill={
+                      COLORS[
+                        index % COLORS.length
+                      ]
+                    }
+                  />
+                ))}
+              </Pie>
 
-            <Tooltip />
-            <Legend
-              wrapperStyle={{ color: theme.palette.text.secondary }}
-            />
-          </PieChart>
-        </ResponsiveContainer>
+              <Tooltip
+                contentStyle={{
+                  backgroundColor: theme.palette.background.paper,
+                  border: `1px solid ${theme.palette.divider}`,
+                  borderRadius: 4,
+                }}
+              />
+              <Legend
+                wrapperStyle={{ color: theme.palette.text.secondary }}
+              />
+            </PieChart>
+          </ResponsiveContainer>
+        </Box>
       </CardContent>
     </Card>
   );
