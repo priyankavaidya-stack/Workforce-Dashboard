@@ -106,13 +106,7 @@ const StatusChart = () => {
                 ))}
               </Pie>
 
-              <Tooltip
-                contentStyle={{
-                  backgroundColor: theme.palette.background.paper,
-                  border: `1px solid ${theme.palette.divider}`,
-                  borderRadius: 4,
-                }}
-              />
+              <Tooltip />
               <Legend
                 wrapperStyle={{ color: theme.palette.text.secondary }}
               />

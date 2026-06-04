@@ -89,13 +89,7 @@ const RevenueChart = () => {
 
               <YAxis tick={{ fill: theme.palette.text.secondary, fontSize: 12 }} />
 
-              <Tooltip
-                contentStyle={{
-                  backgroundColor: theme.palette.background.paper,
-                  border: `1px solid ${theme.palette.divider}`,
-                  borderRadius: 4,
-                }}
-              />
+              <Tooltip />
 
               <Bar
                 dataKey="payroll"
