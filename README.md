@@ -293,13 +293,11 @@ Drop the repo URL into any platform for 1-click deployment.
 ## 📸 Screenshots
 
 > **Note:** Add screenshots here by:
-> 1. Running the dev server: `npm run dev`
-> 2. Taking screenshots of key features:
->    - Full dashboard with KPI cards and charts
->    - Filtered employee grid (dark mode)
->    - Employee detail drawer
->    - Mobile responsive view
-> 3. Commit screenshots to `public/screenshots/` and link below
+> <img width="1464" height="811" alt="Screenshot 2026-06-04 at 3 32 00 PM" src="https://github.com/user-attachments/assets/dd651884-98d3-4822-8c9c-339de15fe04f" />
+> <img width="1459" height="796" alt="Screenshot 2026-06-04 at 3 32 18 PM" src="https://github.com/user-attachments/assets/3527d880-abcd-4522-836a-be8b373e9585" />
+> <img width="1463" height="817" alt="Screenshot 2026-06-04 at 3 32 30 PM" src="https://github.com/user-attachments/assets/a2209cea-6c01-4e0a-9c8f-48c37f46889e" />
+> <img width="1465" height="795" alt="Screenshot 2026-06-04 at 3 32 42 PM" src="https://github.com/user-attachments/assets/b12fa78b-df6f-4c9c-ab7c-de9997635ea8" />
+> <img width="1461" height="809" alt="Screenshot 2026-06-04 at 3 32 54 PM" src="https://github.com/user-attachments/assets/7ba95bb7-5d2a-420c-906a-3fb0b51622fc" />
 
 **Feature Showcase:**
 - Dashboard Overview (with KPIs, charts, top performer card)
