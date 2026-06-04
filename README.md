@@ -361,7 +361,7 @@ MIT License – feel free to use this project as a portfolio piece or template.
 ## 👤 Author
 
 **Priyanka Vaidya**  
-[GitHub](https://github.com/priyankavaidya-stack) | [Email](mailto:vaidyapriyanka80@gmail.com)
+[GitHub](https://github.com/priyankavaidya-stack)
 
 ---
 
@@ -373,8 +373,6 @@ This dashboard showcases:
 - **Professional UI/UX** with Material-UI, dark mode, and accessibility
 - **Data visualization expertise** with Recharts and AG Grid
 - **Full-stack thinking** (from component design to deployment automation)
-
-**Try the live demo**: [https://priyankavaidya-stack.github.io/Workforce-Dashboard](https://priyankavaidya-stack.github.io/Workforce-Dashboard)
 
 ---
 
