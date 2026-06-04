@@ -2,7 +2,7 @@
 
 **A modern, real-time employee analytics platform built with React, TypeScript, and AG Grid.**
 
-Live Demo: [https://priyankavaidya-stack.github.io/Workforce-Dashboard](https://priyankavaidya-stack.github.io/Workforce-Dashboard)
+Live Demo: Yet to be deployed
 
 ---
 
@@ -89,19 +89,6 @@ npm run dev
 
 # Open in browser
 # Navigate to http://localhost:5173
-```
-
-### Build & Production
-
-```bash
-# Type-check and build for production
-npm run build
-
-# Preview production build locally
-npm run preview
-
-# Deploy to GitHub Pages
-npm run deploy
 ```
 
 ---
@@ -266,27 +253,6 @@ The dashboard includes **20 employee records** with realistic fields:
 - **First Contentful Paint (FCP)**: < 1s on 3G
 - **Time to Interactive (TTI)**: < 2s
 - **Lighthouse Score**: 85+ (Performance)
-
----
-
-## 🚢 Deployment
-
-### GitHub Pages (Recommended for Portfolio)
-
-```bash
-# Deploy automatically
-npm run deploy
-
-# Your live site: https://priyankavaidya-stack.github.io/Workforce-Dashboard
-```
-
-The workflow:
-1. Builds production bundle
-2. Deploys `dist/` folder to GitHub Pages branch
-3. Live within minutes
-
-### Alternative: Vercel, Netlify
-Drop the repo URL into any platform for 1-click deployment.
 
 ---
 
